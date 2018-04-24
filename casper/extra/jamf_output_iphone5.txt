@@ -1,0 +1,395 @@
+user@dev:~/JAMF$ curl -H 'content-type: application/json' https://tryitout.jamfcloud.com/JSSResource/mobiledevices/id/603 | jq .
+
+{
+  "mobile_device": {
+    "general": {
+      "id": 603,
+      "display_name": "Ginny's iPhone Work",
+      "device_name": "Ginny's iPhone Work",
+      "name": "Ginny's iPhone Work",
+      "asset_tag": "",
+      "last_inventory_update": "Wednesday, October 29 2014 at 5:06 PM",
+      "last_inventory_update_epoch": 1414602360600,
+      "last_inventory_update_utc": "2014-10-29T17:06:00.600+0000",
+      "capacity": 13013,
+      "capacity_mb": 13013,
+      "available": 6663,
+      "available_mb": 6663,
+      "percentage_used": 48,
+      "os_type": "iOS",
+      "os_version": "8.1",
+      "os_build": "12B411",
+      "serial_number": "CA45145660A3",
+      "udid": "ca45144c60a311e490b812df261f2c7e",
+      "initial_entry_date_epoch": 1414602323608,
+      "initial_entry_date_utc": "2014-10-29T17:05:23.608+0000",
+      "phone_number": "6124990755",
+      "ip_address": "70.197.235.99",
+      "wifi_mac_address": "BC:92:6B:2A:DB:53",
+      "bluetooth_mac_address": "BC:92:6B:2A:DB:54",
+      "modem_firmware": "7.03.00",
+      "model": "iPhone 5 (CDMA)",
+      "model_identifier": "iPhone5,2",
+      "model_number": "MD654LL",
+      "modelDisplay": "iPhone 5 (CDMA)",
+      "model_display": "iPhone 5 (CDMA)",
+      "device_ownership_level": "Institutional",
+      "last_enrollment_epoch": 1414602341671,
+      "last_enrollment_utc": "2014-10-29T17:05:41.671+0000",
+      "managed": true,
+      "supervised": false,
+      "exchange_activesync_device_identifier": "",
+      "shared": "No",
+      "tethered": "",
+      "battery_level": 85,
+      "ble_capable": false,
+      "device_locator_service_enabled": true,
+      "do_not_disturb_enabled": false,
+      "cloud_backup_enabled": false,
+      "last_cloud_backup_date_epoch": 1413941198000,
+      "last_cloud_backup_date_utc": "2014-10-22T01:26:38.000+0000",
+      "location_services_enabled": false,
+      "itunes_store_account_is_active": true,
+      "last_backup_time_epoch": 0,
+      "last_backup_time_utc": "",
+      "site": {
+        "id": -1,
+        "name": "None"
+      }
+    },
+    "location": {
+      "username": "ginny.hornibrook",
+      "realname": "Ginny Hornibrook",
+      "real_name": "Ginny Hornibrook",
+      "email_address": "ginny.hornibrook@jamfsoftware.com",
+      "position": "Senior Inside Sales Representative",
+      "phone": "(612) 499-0755",
+      "phone_number": "(612) 499-0755",
+      "department": "Sales - Commercial",
+      "building": "Minneapolis",
+      "room": "301 4th Ave. S.\r\nSuite 1075"
+    },
+    "purchasing": {
+      "is_purchased": true,
+      "is_leased": false,
+      "po_number": "",
+      "vendor": "",
+      "applecare_id": "",
+      "purchase_price": "",
+      "purchasing_account": "",
+      "po_date": "",
+      "po_date_epoch": 0,
+      "po_date_utc": "",
+      "warranty_expires": "",
+      "warranty_expires_epoch": 0,
+      "warranty_expires_utc": "",
+      "lease_expires": "",
+      "lease_expires_epoch": 0,
+      "lease_expires_utc": "",
+      "life_expectancy": 0,
+      "purchasing_contact": "",
+      "attachments": []
+    },
+    "applications": [
+      {
+        "application_name": "Adobe Reader",
+        "application_version": "100920",
+        "identifier": "com.adobe.Adobe-Reader"
+      },
+      {
+        "application_name": "ADP Mobile",
+        "application_version": "610",
+        "identifier": "com.adp.adpmobile"
+      },
+      {
+        "application_name": "Apple Store",
+        "application_version": "3.1.0",
+        "identifier": "com.apple.store.Jolly"
+      },
+      {
+        "application_name": "Box",
+        "application_version": "7293",
+        "identifier": "net.box.BoxNet"
+      },
+      {
+        "application_name": "Concur",
+        "application_version": "9.14.0.357471",
+        "identifier": "com.concur.concurmobile"
+      },
+      {
+        "application_name": "Connect",
+        "application_version": "2.6.5",
+        "identifier": "com.mindbodyonline.connect"
+      },
+      {
+        "application_name": "Crackle",
+        "application_version": "4.2",
+        "identifier": "com.crackle.crackle-iphone"
+      },
+      {
+        "application_name": "CrashPlan",
+        "application_version": "70",
+        "identifier": "com.code42.proe"
+      },
+      {
+        "application_name": "DocScan",
+        "application_version": "8.8.1",
+        "identifier": "com.ifunplay.DocScan"
+      },
+      {
+        "application_name": "Emoji",
+        "application_version": "2.5",
+        "identifier": "goatmem.emoji"
+      },
+      {
+        "application_name": "Emoticons 2",
+        "application_version": "3.5",
+        "identifier": "com.emoticons.freemium"
+      },
+      {
+        "application_name": "Events",
+        "application_version": "358",
+        "identifier": "com.taptera.Events"
+      },
+      {
+        "application_name": "Evernote",
+        "application_version": "311939",
+        "identifier": "com.evernote.iPhone.Evernote"
+      },
+      {
+        "application_name": "Facebook",
+        "application_version": "4697910",
+        "identifier": "com.facebook.Facebook"
+      },
+      {
+        "application_name": "Find iPhone",
+        "application_version": "472.1",
+        "identifier": "com.apple.mobileme.fmip1"
+      },
+      {
+        "application_name": "Fly Delta",
+        "application_version": "1862",
+        "identifier": "com.delta.iphone.ver1"
+      },
+      {
+        "application_name": "Google Maps",
+        "application_version": "3.2.6.36308",
+        "identifier": "com.google.Maps"
+      },
+      {
+        "application_name": "Groupon",
+        "application_version": "32872",
+        "identifier": "com.groupon.grouponapp"
+      },
+      {
+        "application_name": "HipChat",
+        "application_version": "30001",
+        "identifier": "com.hipchat.ios"
+      },
+      {
+        "application_name": "HostPilot",
+        "application_version": "1.0.1",
+        "identifier": "net.intermedia.Hostpilot"
+      },
+      {
+        "application_name": "IMDb",
+        "application_version": "40501.9215",
+        "identifier": "com.imdb.imdb"
+      },
+      {
+        "application_name": "LinkedIn",
+        "application_version": "8.1",
+        "identifier": "com.linkedin.LinkedIn"
+      },
+      {
+        "application_name": "Lync 2010",
+        "application_version": "1.7",
+        "identifier": "com.microsoft.lync2010.iphone"
+      },
+      {
+        "application_name": "Messenger",
+        "application_version": "4819706",
+        "identifier": "com.facebook.Messenger"
+      },
+      {
+        "application_name": "My Verizon",
+        "application_version": "3.12.0",
+        "identifier": "com.vzw.hss.myverizon"
+      },
+      {
+        "application_name": "My.Services",
+        "application_version": "1.0.13",
+        "identifier": "net.intermedia.mms"
+      },
+      {
+        "application_name": "Neon",
+        "application_version": "68",
+        "identifier": "com.eventbrite.app1"
+      },
+      {
+        "application_name": "Netflix",
+        "application_version": "3004167",
+        "identifier": "com.netflix.Netflix"
+      },
+      {
+        "application_name": "Okta Mobile",
+        "application_version": "5",
+        "identifier": "com.okta.ios.mobile"
+      },
+      {
+        "application_name": "OpenTable",
+        "application_version": "8.1.0.6",
+        "identifier": "com.contextoptional.OpenTable"
+      },
+      {
+        "application_name": "O\u007fW\u007fA",
+        "application_version": "929.19",
+        "identifier": "com.microsoft.exchange.iphone"
+      },
+      {
+        "application_name": "Pandora",
+        "application_version": "5.6",
+        "identifier": "com.pandora"
+      },
+      {
+        "application_name": "Plowz&Mowz",
+        "application_version": "2.1.2",
+        "identifier": "com.plowz.app"
+      },
+      {
+        "application_name": "Salesforce1",
+        "application_version": "3000747",
+        "identifier": "com.salesforce.chatter"
+      },
+      {
+        "application_name": "Self Service",
+        "application_version": "14100901",
+        "identifier": "com.jamfsoftware.selfservice"
+      },
+      {
+        "application_name": "Solitaire",
+        "application_version": "3.0.4",
+        "identifier": "com.fingerarts.Solitaire"
+      },
+      {
+        "application_name": "SoundHound",
+        "application_version": "6.2.2",
+        "identifier": "com.melodis.soundhound.free"
+      },
+      {
+        "application_name": "Touch",
+        "application_version": "2.0.1",
+        "identifier": "com.salesforce.touch"
+      },
+      {
+        "application_name": "Toyota Owners",
+        "application_version": "20140926.20.10.11",
+        "identifier": "com.toyota.ToyotaOwners"
+      },
+      {
+        "application_name": "Uber",
+        "application_version": "2.46.1",
+        "identifier": "com.ubercab.UberClient"
+      },
+      {
+        "application_name": "Urbanspoon",
+        "application_version": "3.5.4.10",
+        "identifier": "com.urbanspoon.urbanspin"
+      },
+      {
+        "application_name": "USA",
+        "application_version": "7.2.3",
+        "identifier": "com.navionics.SingleApp-USHMP"
+      },
+      {
+        "application_name": "WebEx",
+        "application_version": "32",
+        "identifier": "com.webex.meeting"
+      },
+      {
+        "application_name": "Wells Fargo",
+        "application_version": "75",
+        "identifier": "com.wf.mobilebanking"
+      },
+      {
+        "application_name": "Y! Messenger",
+        "application_version": "5468",
+        "identifier": "com.yahoo.messenger"
+      },
+      {
+        "application_name": "YouTube",
+        "application_version": "2.13.11403",
+        "identifier": "com.google.ios.youtube"
+      },
+      {
+        "application_name": "Zappos",
+        "application_version": "1",
+        "identifier": "com.zappos.ipad"
+      },
+      {
+        "application_name": "Zillow",
+        "application_version": "2.5.4585",
+        "identifier": "com.zillow.digs"
+      }
+    ],
+    "security": {
+      "data_protection": true,
+      "block_level_encryption_capable": true,
+      "file_level_encryption_capable": true,
+      "passcode_present": true,
+      "passcode_compliant": true,
+      "passcode_compliant_with_profile": true,
+      "passcode_lock_grace_period_enforced": "Not Available",
+      "hardware_encryption": 3,
+      "activation_lock_enabled": true,
+      "jailbreak_detected": "Unknown",
+      "lost_mode_enabled": "Unsupervised Device",
+      "lost_mode_enforced": false,
+      "lost_mode_enable_issued_epoch": 0,
+      "lost_mode_enable_issued_utc": "",
+      "lost_mode_message": "",
+      "lost_mode_phone": "",
+      "lost_mode_footnote": "",
+      "lost_location_epoch": 1524526511041,
+      "lost_location_utc": "2018-04-23T23:35:11.041+0000",
+      "lost_location_latitude": 0,
+      "lost_location_longitude": 0,
+      "lost_location_altitude": -1,
+      "lost_location_speed": -1,
+      "lost_location_course": -1,
+      "lost_location_horizontal_accuracy": -1,
+      "lost_location_vertical_accuracy": -1
+    },
+    "network": {
+      "home_carrier_network": "Verizon",
+      "cellular_technology": "Unknown",
+      "voice_roaming_enabled": "Yes",
+      "imei": "99 000281 303966 4",
+      "iccid": "8914 8000 0003 0482 8503",
+      "meid": "99000281303966",
+      "current_carrier_network": "",
+      "carrier_settings_version": "18.0",
+      "current_mobile_country_code": "311",
+      "current_mobile_network_code": "480",
+      "home_mobile_country_code": "311",
+      "home_mobile_network_code": "480",
+      "data_roaming_enabled": false,
+      "roaming": false,
+      "phone_number": "6124990755"
+    },
+    "certificates": [],
+    "configuration_profiles": [],
+    "provisioning_profiles": [],
+    "mobile_device_groups": [
+      {
+        "id": 2,
+        "name": "All Managed iPhones"
+      },
+      {
+        "id": 6,
+        "name": "Test"
+      }
+    ],
+    "extension_attributes": []
+  }
+}

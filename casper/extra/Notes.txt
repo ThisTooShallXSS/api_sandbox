@@ -1,0 +1,80 @@
+Commands:
+
+curl -H 'content-type: application/json' https://tryitout.jamfcloud.com/JSSResource/networksegments | jq .
+curl -H 'content-type: application/json' https://tryitout.jamfcloud.com/JSSResource/computers | jq .
+curl -H 'content-type: application/json' https://tryitout.jamfcloud.com/JSSResource/mobiledevices | jq .
+
+Other endpoints of value:
+/JSSResource/computers
+/JSSResource/computers/id/30
+/JSSResource/mobiledevices
+/JSSResource/mobiledevices/id/16
+/JSSResource/computers/name/'Lindsey’s MacBook Pro' (search by name)
+/JSSResource/printers
+/JSSResource/ldapservers
+/JSSResource/users
+/JSSResource/buildings
+/JSSResource/departments
+
+API Documentation:
+https://developer.jamf.com/apis/jamf-pro-api/index
+
+Flow Explained:
+
+1) Fetch a list of networks managed by JAMF and report start/end ranges with the name & ID.
+- Endpoint: GET {url}/JSSResource/networksegments
+
+Response:
+{
+  "network_segments": [
+    {
+      "id": 1,
+      "name": "JAMF Minneapolis",
+      "starting_address": "10.10.8.1",
+      "ending_address": "10.10.11.254"
+    },
+    {
+      "id": 2,
+      "name": "JAMF Eau Claire",
+      "starting_address": "10.10.12.1",
+      "ending_address": "10.10.15.254"
+    },
+    {
+      "id": 3,
+      "name": "Amsterdam Office",
+      "starting_address": "10.1.1.1",
+      "ending_address": "10.10.1.1"
+    }
+  ]
+}
+
+2) Fetch a list of IDs of the managed computers, mobile devices, printers, users, etc.
+- Endpoint: GET {url}/JSSResource/computers
+
+Response:
+{
+  "computers": [
+    {
+      "id": 26,
+      "name": "Sally’s MacBook Air"
+    },
+    {
+      "id": 30,
+      "name": "Lindsey’s MacBook Pro"
+    },
+    {
+      "id": 33,
+      "name": "BHansen-MBP233ssd (2)"
+    },
+    {
+      "id": 35,
+      "name": "Cole Turner"
+    }
+  ]
+}
+
+3) For each ID returned in step 2, make a query for host details.
+- Endpoint: GET {url}/JSSResource/computers/id/{id}
+
+Alternatively, if we wanted to lookup by name than by pulling all IDs, we can query by hostname.
+- Endpoint: GET {url}/JSSResource/computers/name/'Dan’s MacBook Pro'
