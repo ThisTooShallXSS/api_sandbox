@@ -1,0 +1,86 @@
+user@dev:~/JAMF$ python casper_query_api.py
+Polling Casper/JAMF API for Information...
+
+Note: Using public JAMF API. Limiting output to first 5 mobile/pc lookups.
+
+All Managed Devices :
+------
+Mobile : 116
+Computers : 101
+Peripheral Devices : 54
+Printers : 9
+
+Administrative
+------
+Buildings : 17
+Departments : 38
+# of Users : 76
+------
+
+Managed Networks : 3
+------
+Network : JAMF Minneapolis (ID: 1)
+Ranges :  10.10.8.1 - 10.10.11.254
+------
+Network : JAMF Eau Claire (ID: 2)
+Ranges :  10.10.12.1 - 10.10.15.254
+------
+Network : Amsterdam Office (ID: 3)
+Ranges :  10.1.1.1 - 10.10.1.1
+------
+
+Managed Desktops/Laptops : 101
+------
+Name : Sally’s MacBook Air (S/N : CA4105D260A3)
+Last IP : 10.10.20.162 (MAC : 48:D7:05:E3:4F:CD)
+Model : MacBook Air (13-inch Mid 2013) (MacBookAir6,2)
+OS : Mac OS X 10.9.5 (13F34)
+------
+Name : Lindsey’s MacBook Pro (S/N : CA40D8AA60A3)
+Last IP : 192.168.1.5 (MAC : B8:E8:56:22:1B:C4)
+Model : MacBook Air (13-inch Mid 2013) (MacBookAir6,2)
+OS : Mac OS X 10.9.4 (13E28)
+------
+Name : BHansen-MBP233ssd (2) (S/N : CA40DA6C60A3)
+Last IP : 192.168.1.219 (MAC : C8:2A:14:0C:43:24)
+Model : 13-inch MacBook Pro (2011) (MacBookPro8,1)
+OS : Mac OS X 10.10.0 (14A389)
+------
+Name : Cole Turner (S/N : CA41065460A3)
+Last IP : 192.168.1.100 (MAC : 40:6C:8F:1B:87:2A)
+Model : 13-inch MacBook Pro (2011) (MacBookPro8,1)
+OS : Mac OS X 10.9.5 (13F34)
+------
+Name : iSelenium (S/N : CA40DB2060A3)
+Last IP : 10.11.25.45 (MAC : 40:6C:8F:0F:AA:99)
+Model : iMac Intel (21.5-inch, Mid 2011) (iMac12,1)
+OS : Mac OS X 10.9.5 (13F34)
+------
+
+Managed Mobile Devices : 116
+------
+Name : costanza (S/N : CA44C68660A3)
+Last IP : 66.162.55.178 (MAC : 0C:3E:9F:49:99:67)
+Model : iPhone 5S (GSM) (iPhone6,1)
+OS : iOS 8.1 (12B411)
+------
+Name : Miley' JAMF Primary black iPad Mini (S/N : CA44C89860A3)
+Last IP : 63.149.27.134 (MAC : AC:3C:0B:5E:50:93)
+Model : iPad mini (CDMA) (iPad2,7)
+OS : iOS 8.1 (12B410)
+------
+Name : Jeff's iPhone (S/N : CA44C96A60A3)
+Last IP : 174.34.196.28 (MAC : 54:EA:A8:3A:DC:E3)
+Model : iPhone 5 (CDMA) (iPhone5,2)
+OS : iOS 8.0 (12A365)
+------
+Name : siPad (S/N : CA44CA9660A3)
+Last IP : 66.162.55.178 (MAC : 5C:96:9D:15:B7:CF)
+Model : iPad mini (CDMA) (iPad2,7)
+OS : iOS 8.0.2 (12A405)
+------
+Name : Student's iPad (S/N : CA44CB0460A3)
+Last IP : 66.162.55.178 (MAC : 70:DE:E2:89:96:C6)
+Model : iPad 2 (Wi-Fi) (iPad2,1)
+OS : iOS 7.1.2 (11D257)
+------
