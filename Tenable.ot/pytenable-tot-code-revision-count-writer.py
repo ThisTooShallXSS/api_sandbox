@@ -135,8 +135,8 @@ def get_revisions():
         rev_pair = {}                                   # Create the dict for storing each id+rev_count+name combo.
         asset_name = asset.details["name"]                         # You can reference vars() of the asset object directly using ".name" for example.
 
-        if check_snapshot_supported(asset.id):          # If this is a controller or PLC that we support code revision snapshots for.
-            rev_count = get_revision_count(asset.id)    # Determine how many code revisions there are for that specific asset.
+        if check_snapshot_supported(asset.details["id"]):          # If this is a controller or PLC that we support code revision snapshots for.
+            rev_count = get_revision_count(asset.details["id"])    # Determine how many code revisions there are for that specific asset.
             print("(READING) Found Rev Count: ", rev_count, "    Name: ", asset_name)
             # This is a useful debug statement when fetching the code revisions count from each controller. It gives you feedback that the script is working.
 
