@@ -133,16 +133,16 @@ def get_revisions():
 
     for asset in all_controllers:                       # For loop over all controllers found in the assets.list() filtered query.
         rev_pair = {}                                   # Create the dict for storing each id+rev_count+name combo.
-        asset_name = asset.name                         # You can reference vars() of the asset object directly using ".name" for example.
+        asset_name = asset.details["name"]                         # You can reference vars() of the asset object directly using ".name" for example.
 
         if check_snapshot_supported(asset.id):          # If this is a controller or PLC that we support code revision snapshots for.
             rev_count = get_revision_count(asset.id)    # Determine how many code revisions there are for that specific asset.
             print("(READING) Found Rev Count: ", rev_count, "    Name: ", asset_name)
             # This is a useful debug statement when fetching the code revisions count from each controller. It gives you feedback that the script is working.
 
-            rev_pair['id'] = asset.id
+            rev_pair['id'] = asset.details["id"]
             rev_pair['count'] = rev_count
-            rev_pair['name'] = asset.name
+            rev_pair['name'] = asset_name
             rev_assets.append(rev_pair)                 # Append this asset's dict of 3 data points to the end of the array.
 
     return rev_assets                                   # Return a large dict of all controllers with revisions. Includes their count, name, ID.
