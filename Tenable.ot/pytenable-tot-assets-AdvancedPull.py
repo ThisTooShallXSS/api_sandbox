@@ -45,7 +45,8 @@ def get_controllers(search_string):
 #                      {"field":"hidden","op":"Equal","values":"false"}
 #                      ]}
 
-    return tot.assets.list(filter=filter_controllers, search=search_string)
+    return tot.assets.list(query_filter=filter_controllers, 
+search=search_string)
 
 """ --------------------------------------------------------------------------------------------------------------------
 #  This will fetch only assets in "Network Devices" view. Returns an object for each asset, usable in for-loop.
@@ -58,7 +59,8 @@ def get_network_devices(search_string):
                       {"field":"hidden","op":"Equal","values":"false"}
                       ]}
       
-    return tot.assets.list(filter=filter_controllers, search=search_string)
+    return tot.assets.list(query_filter=filter_controllers, 
+search=search_string)
 
 """ --------------------------------------------------------------------------------------------------------------------
 #  This will fetch only assets in "Network Devices" view. Returns an object for each asset, usable in for-loop.
@@ -71,7 +73,7 @@ def get_iot_devices():
                       {"field":"hidden","op":"Equal","values":"false"}
                       ]}
       
-    return tot.assets.list(filter=filter_controllers)
+    return tot.assets.list(query_filter=filter_controllers)
 
 """ --------------------------------------------------------------------------------------------------------------------
 # This basic function will count however many assets are returned by the GraphQL query.
